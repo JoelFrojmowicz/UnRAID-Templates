@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/JoelFrojmowicz/UnRAID-Templates/issues</Support>
+  <Support>https://forums.unraid.net/topic/196049-support-joomla/</Support>
   <Project>https://github.com/JoelFrojmowicz/UnRAID-Templates.git</Project>
   <ReadMe>https://github.com/JoelFrojmowicz/UnRAID-Templates</ReadMe>
   <Overview>Joomla! is a free, open-source Content Management System (CMS) used to build and manage websites and powerful online applications without needing extensive coding. It's known for its flexibility, extensibility with thousands of free extensions and templates, and strong community, making it suitable for everything from personal blogs to complex corporate sites, and it supports multiple languages natively. </Overview>
