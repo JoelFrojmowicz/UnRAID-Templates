@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Joomla</Name>
+  <Repository>joomla:latest</Repository>
+  <Registry>https://github.com/JoelFrojmowicz/UnRAID-Templates/tree/main/Joomla</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/JoelFrojmowicz/UnRAID-Templates/issues</Support>
+  <Project>https://github.com/JoelFrojmowicz/UnRAID-Templates.git</Project>
+  <ReadMe>https://github.com/JoelFrojmowicz/UnRAID-Templates</ReadMe>
+  <Overview>Joomla! is a free, open-source Content Management System (CMS) used to build and manage websites and powerful online applications without needing extensive coding. It's known for its flexibility, extensibility with thousands of free extensions and templates, and strong community, making it suitable for everything from personal blogs to complex corporate sites, and it supports multiple languages natively. </Overview>
+  <Category>Cloud:</Category>
+  <WebUI>http://[IP]:[PORT:8107]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/JoelFrojmowicz/UnRAID-Templates/refs/heads/main/Joomla/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1766758242</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Needs a database service (MySQL or PGSQL). This is not included and must be set up separetly.</Requires>
+  <Config Name="Port" Target="80" Default="8080" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8107</Config>
+  <Config Name="Joomla Content Path" Target="/var/www/html" Default="/mnt/cache/appdata/joomla/html" Mode="rw" Description="Joomla content directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/joomla/html</Config>
+  <Config Name="Site Name" Target="JOOMLA_SITE_NAME" Default="" Mode="" Description="Site name" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Database Host" Target="JOOMLA_DB_HOST" Default="" Mode="" Description="Fill with IP or hostname of the database host" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Database User" Target="JOOMLA_DB_USER" Default="root" Mode="" Description="Fill with database user name to connect with database server" Type="Variable" Display="always" Required="true" Mask="false">root</Config>
+  <Config Name="Database Password" Target="JOOMLA_DB_PASSWORD" Default="" Mode="" Description="Fill with database password to connect with database server" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="Database Name" Target="JOOMLA_DB_NAME" Default="joomla" Mode="" Description="Database name in database server.&#13;&#10;If the Database Name specified in this parameter does not already exist on the given Database server, it will be created automatically upon startup of the joomla container, provided that the JOOMLA_DB_USER specified has the necessary permissions to create it." Type="Variable" Display="always" Required="true" Mask="false">joomla</Config>
+  <Config Name="Database Type" Target="JOOMLA_DB_TYPE" Default="mysqli" Mode="" Description="Database type. Options must be mysqli or pgsql." Type="Variable" Display="always" Required="true" Mask="false">mysqli</Config>
+  <Config Name="Administrator User" Target="JOOMLA_ADMIN_USERNAME" Default="adminstrator" Mode="" Description="Username of the Joomla administrator" Type="Variable" Display="advanced" Required="false" Mask="false">administrator</Config>
+  <Config Name="Administrator Password" Target="JOOMLA_ADMIN_PASSWORD" Default="" Mode="" Description="Password of the Joomla administrator" Type="Variable" Display="advanced" Required="false" Mask="true"></Config>
+  <Config Name="Administrator Email" Target="JOOMLA_ADMIN_EMAIL" Default="" Mode="" Description="Email address of the Joomla administrator" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="Administrator Name" Target="JOOMLA_ADMIN_USER" Default="" Mode="" Description="Full name of the Joomla administrator" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <TailscaleStateDir/>
+</Container>
