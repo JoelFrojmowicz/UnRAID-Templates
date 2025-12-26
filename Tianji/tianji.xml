@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Tianji</Name>
+  <Repository>moonrailgun/tianji</Repository>
+  <Registry>https://github.com/JoelFrojmowicz/UnRAID-Templates/tree/main/Tianji</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/196049-support-mrfroggys-repository/</Support>
+  <Project>https://tianji.dev/</Project>
+  <ReadMe>https://github.com/JoelFrojmowicz/UnRAID-Templates</ReadMe>
+  <Overview>Tianji is an open-source project dedicated to providing robust and efficient solutions for data integration and management. By leveraging community contributions, Tianji continually evolves to meet the dynamic needs of users across various industries. Its open-source nature ensures transparency, flexibility, and the ability to customize functionalities according to specific requirements. Join the Tianji community today to collaborate, innovate, and contribute to a growing ecosystem of cutting-edge data solutions.</Overview>
+  <Category>Cloud: Network:Management Network:Other</Category>
+  <WebUI>https://[IP]:[PORT:12345]</WebUI>
+  <TemplateURL/>
+  <Icon></Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1766777925</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Postgres is required</Requires>
+  <Config Name="Port" Target="12345" Default="12345" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">12345</Config>
+  <Config Name="Database URL" Target="DATABASE_URL" Default="postgresql://tianji:tianji@postgres:5432/tianji" Mode="" Description="Use this syntax: postgresql://tianji:tianji@postgres:5432/tianji" Type="Variable" Display="always" Required="true" Mask="false">postgresql://tianji:tianji@postgres:5432/tianji</Config>
+  <Config Name="Secret Key" Target="JWT_SECRET" Default="replace-me-with-a-random-string" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">replace-me-with-a-random-string</Config>
+  <Config Name="Allow Register" Target="ALLOW_REGISTER" Default="true" Mode="" Description="true/false" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
+  <Config Name="Allow OpenAPI" Target="ALLOW_OPENAPI" Default="true" Mode="" Description="true/false" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
+  <Config Name="Public URL" Target="PUBLIC_URL" Default="" Mode="" Description="for example: https://app.tianji.dev" Type="Variable" Display="always" Required="true" Mask="false">https://tianji.mrfroggy.duckdns.org</Config>
+  <TailscaleStateDir/>
+</Container>
