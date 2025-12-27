@@ -21,11 +21,11 @@
   <DonateText/>
   <DonateLink/>
   <Requires>Postgres is required</Requires>
-  <Config Name="Port" Target="12345" Default="12345" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">12345</Config>
-  <Config Name="Database URL" Target="DATABASE_URL" Default="postgresql://tianji:tianji@postgres:5432/tianji" Mode="" Description="Use this syntax: postgresql://tianji:tianji@postgres:5432/tianji" Type="Variable" Display="always" Required="true" Mask="false">postgresql://tianji:tianji@postgres:5432/tianji</Config>
+  <Config Name="Port" Target="3000" Default="12345" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">12345</Config>
+  <Config Name="Database URL" Target="DATABASE_URL" Default="postgresql://tianji:tianji@postgres:5432/tianji" Mode="" Description="Use this syntax: postgresql://user:password@postgres:5432/database" Type="Variable" Display="always" Required="true" Mask="false">postgresql://tianji:tianji@postgres:5432/tianji</Config>
   <Config Name="Secret Key" Target="JWT_SECRET" Default="replace-me-with-a-random-string" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">replace-me-with-a-random-string</Config>
   <Config Name="Allow Register" Target="ALLOW_REGISTER" Default="true" Mode="" Description="true/false" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
   <Config Name="Allow OpenAPI" Target="ALLOW_OPENAPI" Default="true" Mode="" Description="true/false" Type="Variable" Display="always" Required="true" Mask="false">true</Config>
-  <Config Name="Public URL" Target="PUBLIC_URL" Default="" Mode="" Description="for example: https://app.tianji.dev" Type="Variable" Display="always" Required="true" Mask="false">https://tianji.mrfroggy.duckdns.org</Config>
+  <Config Name="Public URL" Target="PUBLIC_URL" Default="" Mode="" Description="for example: https://app.tianji.dev" Type="Variable" Display="always" Required="true" Mask="false">https://tianji.your_domain.com</Config>
   <TailscaleStateDir/>
 </Container>
